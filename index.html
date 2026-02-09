@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 2</title>
+</head>
+<body>
+    <h1>JavaScript Assignment 2 - All Tasks</h1>
+
+    <h2>Task 1: Declare Three Variables</h2>
+    <p>Check the console to see the results (Press F12)</p>
+
+    <h2>Task 2: Full Name with Alert</h2>
+    <p>An alert will show when the page loads</p>
+
+    <h2>Task 3: Add Numbers Function</h2>
+    <div id="results"></div>
+
+    <h2>Task 4: Cat Age Calculator</h2>
+    <div id="catResults"></div>
+
+    <script>
+        // ===================================
+        // TASK 1: Declare Three Variables
+        // ===================================
+        var firstName = "Moe", lastName = "Adam", age = 52;
+        
+        // Show results in console
+        console.log("Task 1 Results:");
+        console.log("firstName:", firstName);
+        console.log("lastName:", lastName);
+        console.log("age:", age);
+
+
+        // ===================================
+        // TASK 2: Full Name with Alert
+        // ===================================
+        var firstname = "Mike";
+        var lastname = "Douglas";
+        var fullname = firstname + " " + lastname;
+        
+        // Show alert
+        alert("Full Name: " + fullname);
+
+
+        // ===================================
+        // TASK 3: Add Numbers Function
+        // ===================================
+        var total = 0;
+
+        function addMe(x) {
+            total = total + x;
+        }
+
+        // Call function three times with different values
+        addMe(10);
+        addMe(25);
+        addMe(15);
+
+        // Display results
+        document.getElementById("results").innerHTML = 
+            "<strong>Total after adding 10, 25, and 15:</strong> " + total;
+
+
+        // ===================================
+        // TASK 4: Cat Age Calculator
+        // ===================================
+        function calculateCatAge(humanAge) {
+            var catAge = humanAge * 7;
+            var message = "Your cat is " + catAge + " years old in cat years!";
+            return message;
+        }
+
+        // Call function three times with different values
+        var cat1 = calculateCatAge(2);
+        var cat2 = calculateCatAge(5);
+        var cat3 = calculateCatAge(8);
+
+        // Display results
+        document.getElementById("catResults").innerHTML = 
+            "<p>" + cat1 + "</p>" +
+            "<p>" + cat2 + "</p>" +
+            "<p>" + cat3 + "</p>";
+
+    </script>
+</body>
+</html>
