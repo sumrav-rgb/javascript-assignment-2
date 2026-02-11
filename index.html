@@ -10,7 +10,12 @@
 
     <h2>Task 1: Declare Three Variables</h2>
     <p>Check the console to see the results (Press F12)</p>
+    <p>
+        First Name: <span id="first"></span><br>
+        Last Name: <span id="last"></span><br>
+        Age: <span id="age"></span>
 
+    </p>     
     <h2>Task 2: Full Name with Alert</h2>
     <p>An alert will show when the page loads</p>
 
@@ -25,6 +30,10 @@
         // TASK 1: Declare Three Variables
         
         var firstName = "Moe", lastName = "Adam", age = 52;
+
+        document.getElementById("first").innerHTML = firstName;
+        document.getElementById("last").innerHTML = lastName;
+        document.getElementById("age").innerHTML = age;
         
         // Show results in console
         console.log("Task 1 Results:");
